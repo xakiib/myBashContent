@@ -1,0 +1,32 @@
+00477948537501
+docker exec --privileged 636a  ls -1 /home/aof_api/node_modules |grep query
+
+
+curl -H "Accept: application/json" -H "Content-Type: application/json" -X GET http://10.200.65.226:10075/web/services/srvusra/ET0801/ET0801
+
+
+
+curl --header "Content-Type: application/json" --request POST --data '{"username":"ET0801","password":"ET0801"}'  http://10.200.68.170:9131/mysisAuthentication/
+
+
+ docker container run -p 9133:7000 --net=aof-net apiimage
+
+Default location of nginx project 
+ :/usr/share/nginx/html
+ 
+docker cp  aof_api/controllers/.  ac69:/home/aof_api/controllers/
+
+
+ docker container run -p 9136:7000 --net=aof-net apiimage node /home/aof_api/server.js
+ docker container run -p 9137:7000 --net=aof-net apiimage node /home/aof_api/server.js
+ docker container run -p 9138:7000 --net=aof-net apiimage node /home/aof_api/server.js
+
+ docker container run -p 9139:80 --net=aof-net hbl/nginx nginx -g 'deamon off;'
+
+docker container run -p 9140:80 --net=aof-net hbl/ngnix
+
+
+docker exec --privileged b85f  rm -r /home/aof_api/*
+
+
+docker container run -p 9134:5488 --net=aof-net apiimage node /home/aof_api/server.js

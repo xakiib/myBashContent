@@ -1,0 +1,889 @@
+ls
+docker
+clear
+docker
+id
+setup
+cat /etc/passwd
+setup
+vieditor
+exit
+ls
+docker
+docker ps -a
+sudo docker
+sudo docker ps -a
+users
+sudo groupadd docker
+sudo usermod -aG docker cloud-user
+docker ps -a
+sudo shutdown -i
+sudo shutdown
+ls
+cloud -user
+ls
+hostname -i
+ls
+ping 10.6.26.176
+ping 10.6.226.176
+docker ps -a
+mkdir aof_project
+cd aof_project/
+ls
+docker ps -a
+docker images
+docker load
+docker load --help
+docker load -i
+clear
+ls
+cd docker/
+ls
+docker load -i mongo.tar 
+docker load -i node.tar 
+docker load -i front.tar 
+docker images
+docker create volume mongodb 
+docker  volume create mongodb 
+docker  volume create mongoconfig
+cd ..
+docker container run -d -v mongodb:/data/db -v mongoconfig:/data/configdb -h mongodb --name mongodb hbl/mongo
+docker ps -a
+docker exec -it 08 /bin/bash
+docker ps -a
+docker container run --name nodejs --link mongodb:mongodb -d -p 7000:7000 hbl/node
+docker ps -a
+docker container run --name ng  -d -p 8081:80 hbl/ng
+docker ps -a
+hostname -i
+doccker ps -a
+docker ps -a
+docker container rm d913 -f
+docker container run --name ng  -d -p 9130:80 hbl/ng
+docker ps -a
+git
+docker history hbl/node
+docker ps -a
+docker images
+docker load -i front.tar 
+cd docker/
+docker load -i front.tar 
+docker images
+docker ps -a
+docker container rm da5 -f
+docker images
+docker rm 04e
+docker image rm 04e
+docker images
+docker ps -a
+docker container rm 28 -f
+docker ps -a
+docker container run --name nodejs --link mongodb:mongodb -d -p 9031:7000 hbl/node
+docker container run --name ng  -d -p 9030:80 hbl/ng
+docker ps -a
+docker container rm 46 df -f
+docker container run --name nodejs --link mongodb:mongodb -d -p 9131:7000 hbl/node
+docker container run --name ng  -d -p 9130:80 hbl/ng
+docker ps -a
+docker exec -it 83 /bin/bash
+docker logs 83
+docker exec -it 83 /bin/bash
+docker container run --name ng  -d -p 9130:80 hbl/ng
+docker ps -a
+docker exec -it 08 /bin/bash
+docker ps -a
+docker exec -it 83 /bin/bash
+docker ps -a
+docker container restart 83
+docker ps -a
+docker exec -it 83 /bin/bash
+docker logs 83
+docker ps -a
+docker container restart 08
+docker ps -a
+docker logs 08
+date
+docker logs 08
+docker ps -a
+docker logs 83
+docker ps -a
+docker exec -it 83 /bin/bash
+docker ps -a
+docker logs 83
+docker ps -a
+docker exec -it 83 /bin/bash
+docker ps -a
+docker container rm $(docker container ls -a -q) -f
+docker ps -a
+docker network
+docker netword ls
+docker network ls
+docker network create aof-net
+docker network ls
+docker container run --name ng  --network=aof-net  -d -p 9130:80 hbl/ng
+docker container run --name nodejs --network=aof-net --net-alias mongodb -d -p 9131:7000 hbl/node
+docker ps -a
+docker ps -a 9f
+docker container rm  9f -f
+docker container run --name mongodb --network=aof-net --net-alias mongodb -d  hbl/mongo
+docker ps -a
+docker container run --name nodejs --network=aof-net  -d -p 9131:7000 hbl/node
+docker ps -a
+docker exec -it 88 /bin/bash
+docker exec -it 63 /bin/bash
+docker ps -a
+docker logs 0beb
+docker ps -a
+docker exec -it 63b
+docker exec -it 63b /bin/bash
+docker volume ls
+curl -i www.google.com
+curl -x http://proxy3.domestic.hbl.com:8080 www.google.com
+docker ps -a
+ls
+docker ps -a
+docker images
+docker image rm 8b f5 33
+docker ps -a
+docker container rm -f $(docker container ls -a -q)
+docker ps
+docker image ls
+docker image rm 8b f5 33
+docker images
+ls
+cd aof_project/
+ls
+docker load -i front.tar 
+docker load -i server.tar 
+docker load -i mongo.tar 
+docker container run --name mongodb -p 27017:27017 --network=aof-net --net-alias mongodb -d  hbl/mongo
+docker ps -a
+docker exec -it 444 /bin/bansh
+docker exec -it 444 /bin/bash
+docker container run --name nodejs --network=aof-net  -d -p 9131:7000 node_js_aof
+docker container run --name ng  --network=aof-net  -d -p 9130:80 hbl/ngnix
+docker ps -a
+docker logs 260
+docker container start 260 cmd bash
+docker container ls
+docker contaienr prune
+docker container ls -a
+docker container rm 260 -f
+docker container run --name nodejs --network=aof-net  -d -p 9131:7000 node_js_aof echo
+docker container ls
+docker container ls -a
+docker container 62 -f
+docker container ls
+docker ps -a
+docker container rm 62
+docker ps -a
+pwd
+cd aof_project/
+ls
+ls -a
+cd docker
+docker image ls
+docker image rm node_js_aof
+ls
+docker load -i node.tar
+docker image ls
+docker container run --name nodejs --network=aof-net  -d -p 9131:7000 hbl/node
+docker container ls
+docker container exec -it ce bash
+docker container exec -it ce sh
+docker container ls
+docker cp ce20:/etc/nginx/nginx.conf nginx.conf
+pws
+pwd
+docker cp nginx.conf ce20:/etc/nginx/nginx.conf
+ls
+docker container exec -it ce sh
+docker container ls
+docker container restart ce
+docker container exec -it ce sh
+docker container ls
+docker container la -a
+docker container ls -a
+docker container logs ce
+docker cp nginx.conf ce20:/etc/nginx/nginx.conf
+docker container restart ce
+docker container ls
+docker cp nginx.conf ce20:/etc/nginx/nginx.conf
+docker container restart ce
+docker container ls
+docker ps -a
+docker exec -it exec /bin/bash
+docker exec -it exec \bin\bash
+docker exec -it exec bin/bash
+docker exec -it exec bh
+docker exec -it c320  bh
+docker exec -it ce20  bh
+docker exec -it ce20 bin/bash
+docker exec -it ce20 /bin/bash
+docker exec -it ce20 bh
+
+docker ps -a
+docker exec -it ce20 /bin/bash
+docker exec -it ce20  bh
+docker container exec -it ce sh
+docker container ls -a
+export http_proxy=http://proxy3.domestic.hbl.com:8080 && export https_proxy=http://proxy3.domestic.hbl.com:8080
+curl -i www.google.com
+echo env
+curl www.google.com
+export http_proxy=http://proxy3.domestic.hbl.com:8080
+curl www.google.com
+echo http_proxy
+env http_proxy
+echo http_proxy
+echo env http_proxy
+printenv
+hostname -i
+telnet 10.16.0.174
+telnet 10.16.0.174 8080
+curl -i www.google.com
+docker ps -a
+docker exec -it ce2 /bin/bash
+docker exec -it ce2 bash
+docker exec -it ce2 sh
+docker cp ce2:/usr/share/nginx/html/main.js .
+ls
+docker cp main.js ce2:/usr/share/nginx/html/
+docker container restart ce2
+docker cp main.js ce2:/usr/share/nginx/html/
+docker container restart ce2
+docker ps -a
+ls
+cd aof_project/
+ls
+docker load --help
+docker load -i ubuntuwithexcel.tar 
+docker images
+docker tag --help
+docker tag 0647 hbl/nodeExcel
+docker ps -a
+docker container stop 6c8
+docker ps -a
+docker container run --name nodejs --network=aof-net  -d -p 9131:7000 hbl/node
+docker container run --name nodejs --network=aof-net  -d -p 9131:7000 0647
+docker container run --name nodejsEx --network=aof-net  -d -p 9131:7000 0647
+docker ps -a
+docker logs a68
+cd ..
+ls
+docker ps -a
+docker exec 168 -it /bin/bash
+docker exec a68 -it /bin/bash
+docker exec a68 -itd /bin/bash
+docker exec a68 -itd /home/aof_app
+docker ps -a
+docker exec a68 -itd /home/aof_app
+docker exec a68 -it /home/aof_app
+docker logs a68
+docker ps -a
+docker cp a68:/home/aof_api/DB/config.js .
+ls
+cat config.js
+vi config.js 
+cat config.js 
+docker cp config.js a68:/home/aof_api/DB/
+docker ps -a
+docker container restart a68
+docker ps -a
+ls
+ls -al
+cat .bash_history 
+cp .bash_history commands
+ls
+docker cp server.js a68:/home/aof_api/
+docker cp get_AOF_Account.js a68:/home/aof_api/controllers
+docker cp workflowtype.js a68:/home/aof_api/controllers
+docker container restart a68
+docker ps -a
+docker container start a68
+docker ps -a
+docker container a68 logs
+docker container start
+docker cp fileHandler.js  a68:/home/aof_api/controllers
+docker container start a68
+docker ps -a
+docker container a68 logs
+docker container logs  a68
+docker exec -it a68
+docker exec -it a68 /bin/bash
+docker exec run -it a68
+docker exec start -it a68
+docker start exec  -it a68
+docker start  -it a68
+docker start  -i a68
+cat server.js 
+docker cp server.js a68:/home/aof_api/
+docker start  -i a68
+docker cp utils/ a68:/home/aof_api/
+docker start  -i a68
+docker ps -a
+docker container start a68
+docker ps -a
+docker logs a68
+docker ps -a
+hostname -i
+docker ps -a
+ls
+ls -al
+cp .bash_history 170commands.txt
+cd aof_project/
+ls
+docker load -i ubuntuwithexcel.tar 
+docker images
+ls
+cd ..
+docker ps -a
+docker images
+docker tag 0647 hbl/nodeExcel
+docker tag 2e2a hbl/nodeExcel
+docker tag 2e2a hbl/nodeExcel1
+docker images
+docker tag 2e2a hbl/NodeExcel
+docker ps
+docker ps -a
+rm -f a68e
+docker ps -a
+docker rm -f a68e
+docker ps -a
+docker container run --name nodejsEx --network=aof-net -d -p 9131:7000 2e2a
+docker ps -a
+docker logs
+docker logs 93e6
+docker cp 93e65:/home/aof_api/controllers/excelcheck.js .
+docker cp 93e65:/home/aof_api/controllers/excelCheck.js .
+docker cp excelCheck.js  93e65:/home/aof_api/controllers/
+docker container restart 2e2a
+docker ps
+docker container restart 93e6
+docker logs 93e6
+docker cp excelCheck.js  93e65:/home/aof_api/controllers/
+docker container restart 93e6
+docker logs 93e6
+docker ps -a
+docker logs 3
+docker logs 93
+ls
+docker cp 93e65:/home/aof_api/controllers/excelCheck.js .
+docker cp excelCheck.js  93e65:/home/aof_api/controllers/
+docker container restart 93e6
+docker logs 93
+docker exec -it 93 /bin/bash
+docker exec -it 93 bash
+docker ps -a
+docker container restart 93e6
+docker ps -a
+docker exec -it 93 bash
+docker ps -a
+docker images
+cd aof_project/
+ls
+docker rmi 2e2a
+docker rmi 93e
+docker container stop 93e
+docker rm -f 93e
+ls
+docker container
+docker containerclear
+ls
+clear
+ls
+docker load -i ubuntuwithexcel.tar 
+docker images
+docker rmi 2e2a
+docker images
+docker tag 5421 hbl/nodeExcel
+docker container run --name nodejsEx --network=aof-net -d -p 9131:7000 5421
+dockerdocker container
+docker container
+docker ps -a
+docker exec fa9b /bin/bash
+docker exec -it fa9b /bin/bash
+docker container start fa9b
+docker exec -it fa9b /bin/bash
+docker ps -a
+docker rmi fa9
+docker rm -f fa9
+docker ps -a
+docker load -i ubuntuwithexcel.tar 
+docker ps -a
+docker images
+docker tag 542 hbl/nodeExcel
+cd ..
+docker tag 542 hbl/nodeExcel
+docker images
+docker container 
+docker container ls
+docker ps -a
+docker rm -f 6c
+docker ps -a
+docker images
+docker tag 542 hbl/nodeExcel
+docker tag 542 hbl/node
+docker images
+docker container run --name 5421 --network=aof-net -d -p 9131:7000 hbl/node
+docker ps -a
+docker container run -it -p 
+docker ps -a
+ls
+cd aof_project/d
+docker ps
+docker images
+docker container run --name 5421 --network=aof-net -d -p 9131:7000 hbl/node
+docker ps a
+docker ps -a
+docker container start bb13
+docker ps -a
+docker rm -f bb13
+docker ps -a
+docker container run --name 5421 --network=aof-net -d -p 9131:7000 hbl/node
+docker ps -a
+docker logs 51c6
+docker exec -it 51 /bin/bash
+docker ps -a
+docker rm -f 51
+docker ps -a
+docker images
+docker rmi 064
+hostname -i
+ls
+docker load -i ubuntuwithexcel.tar 
+docker ps -a
+docker image
+docker images
+docker ps -a
+docker container run --name 5421 --network=aof-net -d -p 9131:7000 hbl/node
+docker ps -a
+docker exec -it 4a9
+cd ..
+ls
+docker images
+hostname -i
+ls
+cd aof_project/
+ls
+docker images
+ls
+cd ..
+ls
+docker ps -a
+docker rm -f 4a9
+docker ps -a
+docker images
+docker build -t hbl/node .
+ls
+cd aof_project/
+docker build -t hbl/node .
+hostname -i
+ls
+cd aof_api/
+ls
+cd aof_api/
+docker images
+docker build -t ubuntuwithexcel .
+ls
+cd ..
+ls
+cd ..
+ls
+docker build -t ubuntuwithexcel .
+docker images
+ls
+docker images
+docker ps -a
+ls
+docker load --help
+docker load -i ubuntuwithexcel.tar 
+docker images
+docker images tag 033 ubuntuwithexcel
+docker images
+docker container run --name 0332 --network=aof-net -d -p 9131:7000 0332
+docker ps -a
+cd ..
+ls
+cd aof_api
+ls
+docker ps -a
+docker cp . 636:/home/aof_api
+ls
+cd aof_api/
+docker cp . 636:/home/aof_api
+ls
+docker logs 636
+ls
+cat DB/config.js 
+docker cp . 636:/home/aof_api/
+docker restart 636
+docker ps -a
+export http_proxy=http://proxy3.domestic.hbl.com:8080
+cd ..
+ls 
+cd etc/
+ls
+vi environment 
+docker ps -a
+docker ps
+docker cp ce20:/var/www/ .
+docker cp ce20:/var/www .
+docker cp ce20:/var/ .
+ls
+cd var
+ls
+cd local
+ls
+cd ..
+ls
+cd lib
+ls
+cd ..
+ls
+cd opt/
+ls
+cd ..
+docker exec -it ce20 bash
+
+docker cp ce20:/usr/ .
+ls
+cd usr/
+ls
+cd local
+ls
+cd bin
+l
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+rm -f usr/
+rm -r usr/
+ls
+cd ..
+ls
+cd var
+ls
+rm -r usr/
+
+docker cp ce20:/usr/local .
+ls
+cd local
+ls
+cd bin
+ls
+cd ..
+cd lib
+ls
+cd ..
+cd share
+ls
+cd ..
+ls
+cd ..
+ls
+rm -r local/
+docker cp ce20:/var/www .
+docker cp ce20:/etc/nginx/sites-enabled/ .
+docker cp ce20:/etc/nginx/ .
+ls
+cd nginx/
+ls
+cd conf.d/
+l
+ls
+cat default.conf 
+cd ..
+ls
+docker cp ce20:/usr/share .
+docker cp ce20:/usr/share/nginx/html .
+ls
+cd html
+l
+ls
+ls
+ls -a
+cat .bash_history 
+docker ls -a
+docker ps 
+docker cp ce20:/usr/share/nginx/ .
+ls
+cd nginx/
+ls
+cd html
+ls
+cd ..
+rm -r nginx
+docker cp ce20:/usr/local/etc/nginx .
+docker cp ce20:/etc/nginx .
+ls
+cd nginx/
+ls
+cd conf.d/
+l
+ls
+cat default.conf 
+als
+ls
+cd ..
+ls
+cd ..
+ls
+rm -r nginx
+rm -r var
+ls
+rm -r var
+ls
+cd utils
+ls
+docker cp ce20:/usr/share/nginx/ .
+cd nginx/
+ls
+cd html
+ls
+cd ..
+docker cp . ce20:/usr/share/nginx/
+docker cp  ce20:/usr/share/nginx/ .
+ls
+cd html
+docker cp . ce20:/usr/share/nginx/html
+cd ..
+ls
+cd ..
+ls
+docker ps 
+docker restart ce20
+docker ps
+docker cp 636a:/home/aof_api .
+ls
+cd aof_
+cd aof_api/
+ls
+cd aof_api/
+ls
+cd controllers/
+ls
+docker cp . 636a:/home/aof_api/
+cd ..
+ls
+docker restart 636a
+cd aof_api/
+ls
+cd DB
+cat config.js 
+docker ps
+docker restart ce207
+docker ps a
+docker ps
+docker inspect -f "{{ .Config.Env }}" 636
+docker logs 636a
+ls
+cd nginx/
+ls
+cd html
+docker cp . ce20:/usr/local/etc/nginx
+docker cp ce20:/usr/share/nginx/ .
+ docker cp . ce20:/usr/share/nginx/html
+docker restart ce20
+cd html
+ls
+vim main.js
+ci main.js
+vi main.js
+cd ..
+ls
+cd ..
+ls
+docker cp 636a:/home/aof_api/DB .
+ls
+cd DB
+cat config.js 
+docker cp 636a:/home/aof_api/controllers
+docker cp 636a:/home/aof_api/controllers .
+ls
+cd controllers/
+
+cat get_AOF_Account.js |grep more
+cat get_AOF_Account.js 
+docker exec --privileged 636a  ls -1 /home/aof_api
+docker exec --privileged 636a  ls -1 /home/aof_api/controllers
+cd ..
+docker cp  636a:/home/aof_api/controllers/ .
+ls
+cd controllers/
+ls
+docker cp .  636a:/home/aof_api/controllers/
+docker exec --privileged 636a  ls -1 /home/aof_api/controllers
+docker restart 636a
+telnet 10.200.65.227 10021
+tracert 10.200.65.227
+nc 10.200.65.225 10010 < /dev/null; echo $?
+nc 10.200.65.227 10010 < /dev/null; echo $?
+nc 10.200.65.226 10010 < /dev/null; echo $?
+ls
+cd ..
+ls
+docker cp 636a:/home/aof_api/DB .
+cd DB/
+ls
+cat config.js 
+curl
+man curl
+curl --manual
+docker ps
+docker logs 636a
+clear
+ls
+rm -f DB
+rm -r DB
+rm -r controllers
+ls
+docker cp 636a:/home/aof_api .
+ls
+cd aof_api/
+ls
+docker . 636a:/home/
+docker cp . 636a:/home/
+docker exec --privileged 636a  ls -1 /home/
+docker cp . 636a:/home/aof_api/
+docker exec --privileged 636a  ls -1 /home/aof_api/node_modules |grep query
+docker exec --privileged 636a  ls -1 /home/aof_api/node_modules |grep querydocker exec --privileged 636a  ls -1 /home/aof_api/node_modules |grep query
+docker restart 636a
+docker logs 636a
+docker exec --privileged 636a  ls -1 /home/aof_api/node_modules |grep query
+docker exec --privileged 636a  ls -1 /home/aof_api/controllers  
+docker exec --privileged 636a  cat  /home/aof_api/controllers/excelcheck.js
+docker exec --privileged 636a  cat  /home/aof_api/controllers/excelCheck.js
+docker exec --privileged 636a  ls -1 /home/aof_api/node_modules |grep query
+docker logs 636a
+ curl -H "Accept: application/json" -H "Content-Type: application/json" -X GET http://10.200.65.226:10075/web/services/srvusra/ET0801/ET0801
+clear
+curl -H "Accept: application/json" -H "Content-Type: application/json" -X GET http://10.200.65.226:10075/web/services/srvusra/ET0801/ET0801
+clear
+docker exec --privileged 636a  ls -1 /home/aof_api/node_modules |grep query
+docker ps
+docker ps -a
+docker start 636a
+docker ps -a
+docker logs 636a
+docker ps
+docker start 636a
+docker logs 636a
+docker ps
+docker start 636a
+docker logs 636a
+SyntaxError: Unexpected token < in JSON at position 0
+clear
+cd ..
+ls
+docker cp mysisapi.js 636a:/home/aof_api/controllers/
+docker exec --privileged 636a  cat  /home/aof_api/controllers/mysisapi.js
+clear
+docker restart 636a
+docker logs 636a
+docker exec -it 636a /bin/bash
+l
+docker logs 636a
+docker exec -it 636a /bin/bash
+docker restart 636a
+docker ps 
+docker logs 636a
+http://10.200.65.227:10021/web/services/srvusra/ET0801/ET0801
+docker exec -it 636a /bin/bash
+docker restart 636a
+docker logs 636a
+docker exec -it 636a /bin/bash
+docker restart 636a
+docker logs 636a
+docker exec -it 636a /bin/bash
+docker restart 636a
+docker logs
+docker logs 636a
+docker exec -it 636a /bin/bash
+docker restart 636a
+ls
+docker cp mysisapi.js  636a:/home/aof_api/controllers/
+docker exec -it 636a /bin/bash
+cat mysisapi.js 
+docker cp mysisapi.js  636a:/home/aof_api/controllers/
+docker exec --privileged 636a  cat  /home/aof_api/controllers/mysisapi.js
+docker restart 636a
+docker exec -it 636a /bin/bash
+docker restart 636a
+docker logs 636a
+docker exec -it 636a /bin/bash
+docker run 636a
+docker ps 
+docker restart 636a
+docker ps 
+docker exec -it 636a /bin/bash
+docker restart 636a
+docker ps
+docker restart 636a
+docker logs 63a
+docker logs 636a[A
+docker restart 636a
+docker exec --privileged 636a  cat  /home/aof_api/controllers/fileHandler.js
+docker exec --privileged 636a  ls -l  /home/aof_api
+docker exec --privileged 636a  ls -l  /home/aof_api/utils
+docker exec --privileged 636a  cat  /home/aof_api/controllers/fileHandler.js
+docker exec -it 636a /bin/bash
+docker restart 636a
+docker logs 63a
+docker logs 636a
+docker exec -it 636a /bin/bash
+docker restart 636a
+docker exec -it 636a /bin/bash
+ls
+docker ps
+docker restart 636a
+docker ps
+docker ps -a
+docker restart 636a
+docker ps -a
+docker ps
+docker logs 636a
+docker run 636a
+docker ps
+docker run -it 636a /bin/bash
+docker run 636a 
+docker container run -it 636a bash
+docker ps 
+docker ps -a
+ls
+cd hummus/
+ls
+docker cp . 636a:/home/aof_api/node_modules
+docker restart 636a
+docker ps 
+docker ps -a
+docker exec --privileged 636a  ls -1 /home/aof_api/
+docker cp 636a:/home/aof_api/utils/pdf_merged.js
+docker cp 636a:/home/aof_api/utils/pdf_merged.js .
+cd ..
+ls
+cat pdf_merge.js 
+docker cp pdf_merge.js 636a:/home/aof_api/utils/
+docker restart 636a
+docker ps
+docker cp hummus/ 636a:/home/aof_api/node_modules/
+docker exec -it 636a /bin/bash
+docker restart 636a
+docker ps
+docker exec -it 636a /bin/bash
+docker restart 636a
+docker ps
+ls
+docker exec -it 636a /bin/bash
+docker restart 636a
+ls
+docker exec -it 636a /bin/bash
+docker restart 636a
+docker exec -it 636a /bin/bash
+docker restart 636a
+docker exec -it 636a /bin/bash
+ls
