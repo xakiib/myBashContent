@@ -30,3 +30,6 @@ docker exec --privileged b85f  rm -r /home/aof_api/*
 
 
 docker container run -p 9134:5488 --net=aof-net apiimage node /home/aof_api/server.js
+
+# after installation of docker on system 
+sudo usermod -a -G docker $haroonmumtaz
