@@ -1,9 +1,10 @@
-00477948537501
+﻿00477948537501
 docker exec --privileged 636a  ls -1 /home/aof_api/node_modules |grep query
 
 
 curl -H "Accept: application/json" -H "Content-Type: application/json" -X GET http://10.200.65.226:10075/web/services/srvusra/ET0801/ET0801
 
+curl -H "Accept: application/json" -H "Content-Type: application/json" -X GET http://10.200.65.226:10010/web/services/srvusra/ET0801/ET0801
 
 
 curl --header "Content-Type: application/json" --request POST --data '{"username":"ET0801","password":"ET0801"}'  http://10.200.68.170:9131/mysisAuthentication/
@@ -31,5 +32,231 @@ docker exec --privileged b85f  rm -r /home/aof_api/*
 
 docker container run -p 9134:5488 --net=aof-net apiimage node /home/aof_api/server.js
 
-# after installation of docker on system 
+
+docker container run -p 9139:7000 --net=aof-net 4d905 node /home/aof_api/server.js
+
+docker exec --privileged 183d  ls -al /home/aof_api/
+
+
 sudo usermod -a -G docker $haroonmumtaz
+
+#find which port is open on server
+sudo lsof -i -P -n | grep LISTEN
+
+#load image from tar
+docker load < imagename.tardocker 
+
+ docker container run -p 27017:27017 hbl/mongo 
+
+
+iptables -I INPUT -p tcp --dport 27017 --syn -j ACCEPT
+firewall-cmd --zone=public --add-port=27017/tcp --permanent
+firewall-cmd --reload
+
+#restartr firewalld iptables
+systemctl start firewalld
+
+#find port is status 
+netstat -a |grep 27017
+
+#execute below command to find your public ip
+myip="$(dig +short myip.opendns.com @resolver1.opendns.com)"
+echo "My WAN/Public IP address: ${myip}"
+or
+if curl is installed
+curl ifconfig.me
+curl icanhazip.com
+curl ipecho.net/plain
+curl ifconfig.co
+
+
+/sbin/iptables -A INPUT -m state --state NEW -m tcp -p tcp --dport 27017 -j ACCEPT
+
+
+portqry -n 172.18.7.16 -p tcp [-e || -r || -o endpoint(s)] [-q]
+        [-l logfile] [-sp source_port] [-sl] [-cn SNMP community name]
+		
+#Docker	command for mongo db config
+docker exec --privileged f960  cat  /etc/mongod.conf.orig
+
+docker container run -p 37017:27017 --net=aof-net hbl/mongo --auth
+
+
+mongo
+use admin
+db.createUser(
+  {
+    user: "myUserAdmin",
+    pwd: "abc123",
+    roles: [ { role: "userAdminAnyDatabase", db: "admin" } ]
+  }
+)
+
+
+docker exec --privileged 6cf1  rm -r /home/aof_api/
+
+/var/cache/apt/archives yahan ssaray archives paray hotay hain yahan say uthalo
+
+docker container run -p 9131:7000 --net=aof-net ac69image node /home/aof_api/server.js
+
+(/var/lib/docker/containers/xxxx/config.v2.json) is file main ja k change karlo to change docker start file enviornment variable change nhn karsaktay after creating container so idhar say jao uar config change karlo
+
+ODBCINI=/etc/odbc.ini
+export  ODBCINI
+
+
+
+#restart all the containers
+ docker restart $(docker ps -a -q)
+
+docker commit ac69 ac69Image
+docker save -o ac69image.tar ac69image
+
+docker container run -it 4449 --auth
+docker load < 5ab6image.tar.gz
+
+#delete image
+docker rmi <IMAGE ID>
+
+docker rmi <IMAGE ID>
+
+docker container run -p 27017:27017 mongo --auth
+
+
+
+db.getUser( "admin", {
+   showCredentials: <Boolean>,
+   showPrivileges: <Boolean>,
+   showAuthenticationRestrictions: <Boolean>,
+   filter: <document>
+} )
+
+
+db.createUser(
+  {
+    user: "admin",
+    pwd: "admin",
+    roles: [ { role: "userAdminAnyDatabase", db: "admin" } ]
+  }
+)
+
+
+
+
+
+ docker container run -p 9139:80 57e2image nginx -g 'daemon off;'
+ 
+  docker container run -p 9133:80 57e2image nginx -g 'daemon off;'
+  
+   docker container run -p 9139:80 hbl/nginx nginx -g 'daemon off;'
+
+   
+   
+    <app-root></app-root>
+
+<script type="text/javascript" src="runtime.ec2944dd8b20ec099bf3.js"></script><script type="text/javascript" src="polyfills.30482c28db0e6feb4d0f.js"></script><script type="text/javascript" src="main.111322e98d6f0cb6cac1.js"></script>
+
+
+  docker container run -p 9139:80 -p 9139:443 57e2image nginx -g 'daemon off;'
+ docker container run -p 9142:443 57e2image nginx -g 'daemon off;'
+
+
+  
+  docker container run -p 9139:443 57e2image nginx -g 'daemon off;'
+    docker container run -p 9139:443 57e2image nginx -g 'daemon off;'
+	
+	
+	 sudo openssl req -out certreq.csr -new -newkey rsa:2048 -nodes -keyout /app/privateKey.key
+	 
+	 
+	  docker container run -p 9139:80  57e2image nginx -g 'daemon off;'
+	  docker container run -p 9139:80  57e2image nginx -g 'daemon off;'
+	  
+	  docker container run -p 9132:7000 ac69image node /home/aof_api/server.js
+	  docker container run -p 9134:7000 ac69image node /home/aof_api/server.js
+
+docker container run -p 9135:80  57e2image nginx -g 'daemon off;'
+
+	  
+	  
+openssl req \
+-newkey rsa:2048 \
+-x509 \
+-nodes \
+-keyout umairssl.key \
+-new \
+-out umairssl.crt \
+-subj /CN=Hostname \
+-reqexts SAN \
+-extensions SAN \
+-distinguished_name = <(C = ES ST = MyState L = MyCity O = MyOrg) \
+-config <(cat /etc/ssl/openssl.cnf \
+    <(printf '[SAN]\nsubjectAltName=DNS:dcms.hbl.com,IP:10.200.164.124')) \
+-sha256 \
+-days 3650
+
+
+
+[dcms@PKHBLC1DAOWEB docker]$ sudo cp containers/6a23fc23e897a56c01ba0104856b4776180991584f050b5385a42d38b3f4116f/config.v2.json /home/dcms/
+
+
+curl -H "Content-Type: text/xml; charset=utf-8" -H "SOAPAction:"  -d @your_soap_request.xml -X POST https://verification.nadra.gov.pk/bioverisys/bank/branchbankaccount
+
+curl  –header “Content-Type: text/xml;charset=UTF-8” –data @request.xml https://verification.nadra.gov.pk/bioverisys/bank/branchbankaccount
+
+   curl https://verification.nadra.gov.pk/bioverisys/bank/branchbankaccount?WSDL > weatherForcast.wsdl
+
+   
+   openssl pkcs12 -export -in certnew.cer -inkey privateKey.key -out certificate.pfx -certfile CACert.cer
+sudo docker container run -p 9134:7000 ac69imageforlive node /home/aof_api/server.js
+sudo docker container run -p 9132:7000 ac69imageforlive node /home/aof_api/server.js
+
+
+docker container run -p 9140:80 ngnix
+docker run -d -p 4202:4202 --volume ~/nginx:/usr/share/nginx/html nginx
+sudo docker run -d -p 4202:4202 --volume ~/nginx:/usr/share/nginx/ --volume ~/nginx/html:/usr/share/nginx/html nginx
+
+sudo docker run -d -p 9132:7000 --volume /home/dcms/9132:/home/aof_api/ --add-host=verification.nadra.gov.pk:10.10.32.226 --add-host=api.hbl.com:10.200.140.82 ac69imageforlive
+sudo docker run -d -p 9134:7000 --volume /home/dcms/9134:/home/aof_api/ --volume /home/dcms/9134/Scanning:/home/aof_api/Scanning    ac69imageforlive
+ 
+
+
+
+sudo mount -t cifs -o username=muhammad.saqib1,workgroup=DOEMSTIC,password=Pakistan1 //10.6.226.226/shareeveryone /mnt/mymount
+
+[dcms@PKHBLC1DAOWEB ~]$ sudo mount -t cifs -o username=dcms.docs,workgroup=DOEMSTIC,password=Khurram@1234567,vers=3.0 //10.200.144.92/DocumentsArchive/ /home/dcms/
+
+
+ nc 10.200.144.92 445 < /dev/null; echo $?
+ 
+ sudo mount --bind /home/hr/saqib/ /var/saqib/
+ mount --bind <olddir> <mountpoint>
+ 
+sudo mount --rbind /home/hr/saqib/ /var/saqib/ *********rbin is remove binding
+
+sudo docker run -d -p 9130:7000 hrapi_image nodemon /home/hrapi/server.js
+
+sudo docker run -d -p 9130:7000 --volume /home/hr/9130:/home/hrapi/ hrapi_image node /home/hrapi/server.js
+sudo docker run -d -p 9130:7000 hrapi_image node /home/hrapi/server.js
+iptables -I INPUT -p tcp --dport 7000 --syn -j ACCEPT
+sudo sysctl fs.inotify.max_user_watches=582222 && sudo sysctl -p // ager docker networking ka problem ya error anay lagay to
+
+
+#find log file using docker inspect
+sudo docker inspect --format='{{.LogPath}}' CONTAINER_ID
+
+
+#docker events
+#to get output as json
+sudo docker events --filter 'container=9132' --filter 'events=restart' --format 'Type={{json .}}'  --since 19112018
+#to get output in other format
+sudo docker events --filter 'container=9132' --filter 'events=restart' --format 'Type={{.Type}}  Status={{.Status}}  ID={{.ID}}'  --since 19112018
+
+#enable proxy
+echo "http_proxy=http://proxy3.domestic.hbl.com:8080" > /etc/environment
+echo "https_proxy=http://proxy3.domestic.hbl.com:8080" > /etc/environment
+
+#disbale proxy
+unset http_proxy
+unset https_proxy
+
