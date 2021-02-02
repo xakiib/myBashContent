@@ -260,3 +260,164 @@ echo "https_proxy=http://proxy3.domestic.hbl.com:8080" > /etc/environment
 unset http_proxy
 unset https_proxy
 
+
+
+
+472  sudo docker run -d -p 9130:7000 hrapi_image nodemon /home/hrapi/server.js
+  482  sudo docker run -d -p 7000:7000 hrapi_image nodemon /home/hrapi/server.js
+  486  sudo docker run -d -p 80:7000 hrapi_image nodemon /home/hrapi/server.js
+  489  sudo docker run -d -p 9130:7000 hrapi_image node /home/hrapi/server.js
+  492  sudo docker run -d -p 9130:7000 hrapi_image noodemon /home/hrapi/server.js
+  493  sudo docker run -d -p 7000:7000 hrapi_image noodemon /home/hrapi/server.js
+  494  sudo docker run -d -p 443:7000 hrapi_image noodemon /home/hrapi/server.js
+  495  sudo docker run -d -p 443:7000 hrapi_image nodemon /home/hrapi/server.js
+  505  sudo docker run -d -p 9130:7000 hrapi_image nodemon /home/hrapi/server.js
+  531  sudo docker run -d -p 700:7000 hrapi_image node /home/hrapi/server.js
+  534  sudo docker run -d -p 7000:7000 hrapi_image node /home/hrapi/server.js
+  842  sudo docker run -d -p 7000:7000 hrapi_image node /home/hrapi/server.js
+  848  sudo docker run -d -p 7000:7000 hrapi_image05122019 node /home/hrapi/server.js
+  891  sudo docker run -d -p 7000:7000 hrapi_image05122019 node /home/hrapi/server.js
+  950  sudo docker run -d -p 7000:7000 credit-card-service-dr node /app/server.js
+  953  sudo docker run -d -p 7000:7000 credit-card-service-dr:v3 node /app/server.js
+  
+  
+  certnew.crt  dcms.cer  nginx-selfsigned.crt  nginx-selfsigned.key  privateKey.key  serverkey.pem  ssl.pass
+
+ key: fs.readFileSync('/home/aof_api/certs/privateKey.key'),
+   cert: fs.readFileSync('/home/aof_api/certs/certnew.crt'),
+   passphrase: 'hbl@1234'
+
+  docker container run -d -p 9141:443 57e2image --volume /app/9141/html:/usr/share/nginx/html --volume /app/9141/certs:/usr/share/nginx/certs nginx -g 'daemon off;'
+   docker container run -p 27017:27017 --volume /home/cloud-user/27017/data:/data hbl/mongo 
+   
+  #mongo container setups 
+  136  sudo bash masterInit --master
+  152  sudo bash masterInit --master
+  154  sudo bash masterInit --member
+  156  sudo bash masterInit --addnode
+  157  sudo bash masterInit --slavesetup
+  170  sudo bash masterInit --slavesetup
+  177  sudo bash masterInit --master
+  178  sudo bash masterInit --slavesetup
+  183  sudo bash masterInit --slave
+  184  sudo bash masterInit --slavesetup
+  193  sudo bash masterInit --master
+  194  sudo bash masterInit --membe
+  195  sudo bash masterInit --slavesetup
+  205  sudo bash masterInit --master
+  209  sudo bash masterInit --master
+  210  sudo bash masterInit --addnode
+  211  sudo bash masterInit --slavesetup
+  213  sudo bash masterInit --member
+
+
+for i in *; do sudo cp "$i" /app/9134/12022020/; done
+find /var/ -iname '*.rpm'
+cp /var/cache/yum/x86_64/7Server/rhel-7-server-rpms/packages/* .
+
+sudo docker update --restart unless-stopped 9140
+sudo docker events --filter container=9132 event=restart --since=60m
+
+
+
+env
+https_proxy=http://10.16.0.174:8080
+http_proxy=http://10.16.0.174:8080
+resolve.conf
+nameserver 10.16.0.113
+nameserver 10.16.0.112
+proxy3.domestic.hbl.com 10.16.0.170
+
+#hr app container with resolve.conf entry host and volume mounted and environment variables
+docker container run -d -p 7000:7000 -e "https_proxy=http://10.16.0.174:8080" -e "http_proxy=http://10.16.0.174:8080" --add-host=verification.nadra.gov.pk:10.10.32.226 --add-host=api.hbl.com:10.200.140.82 --dns-opt nameserver 10.16.0.113 --dns-opt nameserver 10.16.0.112 --volume /home/hr/app:/app/ 7000_latest
+
+docker container run -d -p 7001:7000 -e "https_proxy=http://10.16.0.174:8080" -e "http_proxy=http://10.16.0.174:8080" --add-host=verification.nadra.gov.pk:10.10.32.226 --add-host=api.hbl.com:10.200.140.82 --dns-opt nameserver=10.16.0.113 --dns-opt nameserver=10.16.0.112 --volume /home/hr/app_7001:/app/ ac69imageforlive
+
+docker container run -d -p 7001:7001 -e "https_proxy=http://10.16.0.174:8080" -e "http_proxy=http://10.16.0.174:8080" --add-host=verification.nadra.gov.pk:10.10.32.226 --add-host=api.hbl.com:10.200.140.82 --dns-opt nameserver=10.16.0.113 --dns-opt nameserver=10.16.0.112 --volume /home/hr/app_7001:/app/ ac69imageforlive
+
+#display complete path in terminal
+export PS1="\u@\h \w> " #in redhat chota w means full path and bara W means currect dir ubuntu main ulat hai
+export PS1='\u@\H:\w$'
+
+
+
+
+sudo docker run -d -p 9130:7000 --volume /home/hr/SPARK/volume_9130/aof_api:/home/aof_api/ --add-host=verification.nadra.gov.pk:10.10.32.226 --add-host=api.hbl.com:10.200.140.82 -e "https_proxy=http://10.16.0.174:8080" -e "http_proxy=http://10.16.0.174:8080" ac69imageforlive
+
+sudo docker run -d -p 9131:7000 --volume /home/hr/SPARK/volume_9131/aof_api:/home/aof_api/ --add-host=verification.nadra.gov.pk:10.10.32.226 --add-host=api.hbl.com:10.200.140.82 -e "https_proxy=http://10.16.0.174:8080" -e "http_proxy=http://10.16.0.174:8080" ac69imageforlive
+
+sudo docker run -d -p 9130:7000 --volume /home/hr/SPARK/volume_9130/aof_api:/home/aof_api/ --add-host=verification.nadra.gov.pk:10.10.32.226 --add-host=api.hbl.com:10.200.140.82 -e "https_proxy=" -e "http_proxy=" mobileapiv1
+
+db.getProfilingStatus()
+ use CONFIGURATION
+db.adminCommand( { getLog : "global" } ) > /logfile
+db.adminCommand( { getLog : "global" } )
+
+sudo mount --bind /u01/document/Scanning /app/9132/Scanning
+sudo mount --bind /app/9132/Scanning /app/9134/Scanning
+
+root@mongoNode1:/# mongo | tee 12maylog.log
+nodemon --max-old-space-size=9192 server.js
+
+
+docker run -d -p 9132:7000 --volume /home/dcms/9132:/home/aof_api/ --add-host=verification.nadra.gov.pk:10.10.32.226 --add-host=api.hbl.com:10.200.140.82 ac69imageforlive
+
+docker run -d -p 9143:7000 --volume /home/dcms/9143:/home/aof_api/ --add-host=verification.nadra.gov.pk:10.10.32.226 --add-host=api.hbl.com:10.200.140.82 ac69imageforlive
+
+
+[12:10 PM] Mansoor Ul Hasan
+    sysctl -a |grep -i vm
+​[12:12 PM] Mansoor Ul Hasan
+    sysctl -a |grep vm.min_free_kbytes
+​[12:15 PM] Mansoor Ul Hasan
+    
+sysctl -w vm.min_free_kbytes=635168
+
+
+mount -t cifs -o username=asad.yahya,workgroup=DOEMSTIC,password=shary0sd97*,vers=3.0 //10.6.227.37/d/ /app/9132/asadd
+
+docker container run -d -p 7020:80 --name 7020 --volume /home/hr/HRAPP/nginx_7020/:/var/log/nginx/ firesh/nginx-lua 
+
+docker container run -d -p 7001:7000 -e "https_proxy=http://10.16.0.174:8080" -e "http_proxy=http://10.16.0.174:8080" --add-host=verification.nadra.gov.pk:10.10.32.226 --add-host=api.hbl.com:10.200.140.82 --dns-opt nameserver=10.16.0.113 --dns-opt nameserver=10.16.0.112 --volume /home/hr/HRAPP/app_7001:/app/ 4057b2cff282
+
+docker container run -d -p 7002:7000 -e "https_proxy=http://10.16.0.174:8080" -e "http_proxy=http://10.16.0.174:8080" --add-host=verification.nadra.gov.pk:10.10.32.226 --add-host=api.hbl.com:10.200.140.82 --dns-opt nameserver=10.16.0.113 --dns-opt nameserver=10.16.0.112 --volume /home/hr/HRAPP/app_7002:/app/ 4057b2cff282
+
+docker container run -d -p 7003:7000 -e "https_proxy=http://10.16.0.174:8080" -e "http_proxy=http://10.16.0.174:8080" --add-host=verification.nadra.gov.pk:10.10.32.226 --add-host=api.hbl.com:10.200.140.82 --dns-opt nameserver=10.16.0.113 --dns-opt nameserver=10.16.0.112 --volume /home/hr/HRAPP/app_7003:/app/ 4057b2cff282
+
+docker container run -d -p 7004:7000 -e "https_proxy=http://10.16.0.174:8080" -e "http_proxy=http://10.16.0.174:8080" --add-host=verification.nadra.gov.pk:10.10.32.226 --add-host=api.hbl.com:10.200.140.82 --dns-opt nameserver=10.16.0.113 --dns-opt nameserver=10.16.0.112 --volume /home/hr/HRAPP/app_7004:/app/ 4057b2cff282
+
+docker container run -d -p 7005:7000 -e "https_proxy=http://10.16.0.174:8080" -e "http_proxy=http://10.16.0.174:8080" --add-host=verification.nadra.gov.pk:10.10.32.226 --add-host=api.hbl.com:10.200.140.82 --dns-opt nameserver=10.16.0.113 --dns-opt nameserver=10.16.0.112 --volume /home/hr/HRAPP/app_7005:/app/ 4057b2cff282
+
+cp -R app_7001/ app_7003; cp -R app_7001/ app_7004; cp -R app_7001/ app_7005; cp -R app_7001/ app_7003;
+
+mount --bind /home/hr/logcenter/ /home/hr/HRAPP/app_7002/log
+mount --bind /home/hr/logcenter/ /home/hr/HRAPP/app_7003/log;
+mount --bind /home/hr/logcenter/ /home/hr/HRAPP/app_7004/log;
+mount --bind /home/hr/logcenter/ /home/hr/HRAPP/app_7005/log;
+mkdir /home/hr/HRAPP/app_7002/log
+mkdir /home/hr/HRAPP/app_7003/log;
+mkdir /home/hr/HRAPP/app_7004/log;
+mkdir /home/hr/HRAPP/app_7005/log;
+mv /home/hr/HRAPP/app_7002/log /home/hr/HRAPP/app_7002/log_backup
+mv /home/hr/HRAPP/app_7003/log /home/hr/HRAPP/app_7003/log_backup;
+mv /home/hr/HRAPP/app_7004/log /home/hr/HRAPP/app_7004/log_backup;
+mv /home/hr/HRAPP/app_7005/log /home/hr/HRAPP/app_7005/log_backup;
+
+
+103.140.217.35
+
+sudo docker run -d -p 9146:7000 --name 9146  ac69imageforlive
+echo "" > $(docker inspect --format='{{.LogPath}}' 9132)
+
+
+
+sudo docker run -d -p 9130:7000 --volume /app/9132:/home/aof_api/ --add-host=verification.nadra.gov.pk:10.10.32.226 --add-host=api.hbl.com:10.200.140.82 -e "https_proxy=http://10.16.0.174:8080" -e "http_proxy=http://10.16.0.174:8080" 9132image_latest
+
+set time zone as of system
+sudo docker run -d -p 9130:7000 --volume /app/9130:/home/aof_api/ --volume /etc/localtime:/etc/localtime:ro --add-host=verification.nadra.gov.pk:10.10.32.226 --add-host=api.hbl.com:10.200.140.82 -e "https_proxy=http://10.16.0.174:8080" -e "http_proxy=http://10.16.0.174:8080" 9132image_latest
+
+docker run -d -p 9131:7000 --volume /home/hr/SPARK/volume_9131/aof_api:/home/aof_api/ --volume /etc/localtime:/etc/localtime:ro --add-host=verification.nadra.gov.pk:10.10.32.226 --add-host=api.hbl.com:10.200.140.82 -e "https_proxy=http://10.16.0.174:8080" -e "http_proxy=http://10.16.0.174:8080" 9130_spark_jan2021
+
+docker run -d -p 9131:7000 --volume /root/volume_9131/aof_api:/home/aof_api/ --volume /etc/localtime:/etc/localtime:ro --add-host=verification.nadra.gov.pk:10.10.32.226 --add-host=api.hbl.com:10.200.140.82 -e "https_proxy=http://10.16.0.174:8080" -e "http_proxy=http://10.16.0.174:8080" 9130_spark_jan2021
+
+docker run -d -p 9130:7000 --volume /root/volume_9130/aof_api:/home/aof_api/ --volume /etc/localtime:/etc/localtime:ro --add-host=verification.nadra.gov.pk:10.10.32.226 --add-host=api.hbl.com:10.200.140.82 9130_spark_jan2021
